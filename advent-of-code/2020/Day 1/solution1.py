@@ -19,3 +19,15 @@ def problem2(values):
             return a * b * c
 
 
+# aux function to grab values from input.txt file and put them in an array
+
+def get_input_from_file():
+    with open('input.txt') as file:
+        values = [int(line) for line in file.readlines()]
+        return values
+
+
+if __name__ == "__main__":
+    values = get_input_from_file()
+    print('solution 1 ', problem1(values))
+    print('solution2: ', problem2(values))
