@@ -29,5 +29,5 @@ def get_input_from_file():
 
 if __name__ == "__main__":
     values = get_input_from_file()
-    print('solution 1 ', problem1(values))
+    print('solution 1: ', problem1(values))
     print('solution2: ', problem2(values))
