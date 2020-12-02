@@ -7,4 +7,12 @@ with open('input.txt', 'r') as file:
     matches = re.findall(regex, lines)
 
 
+def get_valid_passwords():
+    correct = list(filter(lambda match: int(match[0]) <= match[3].count(match[2]) <= int(match[1]), matches))
+    return len(correct)
+
+
+print(get_valid_passwords())
+
+
 
