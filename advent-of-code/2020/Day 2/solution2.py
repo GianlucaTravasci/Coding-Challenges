@@ -15,4 +15,11 @@ def get_valid_passwords():
 print(get_valid_passwords())
 
 
+def get_valid_positions():
+    correct = list(filter(
+        lambda match: operator.xor(match[3][int(match[0]) - 1] == match[2], match[3][int(match[1]) - 1] == match[2]),
+        matches))
+    return len(correct)
 
+
+print(get_valid_positions())
