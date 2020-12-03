@@ -16,3 +16,10 @@ def way_tree_counter(right, down):
 # Part 1
 print(f"Part one (right 3, down 1): {way_tree_counter(3, 1)}")
 
+# Part 2
+ways = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
+multiply_all = 1
+for way in ways:
+    multiply_all *= way_tree_counter(way[0], way[1])
+
+print(f"Part two: {multiply_all}")
