@@ -11,7 +11,13 @@ def compute(modules):
     return first, second
 
 
-
+def total(module):
+    internal_sum = 0
+    fuel_needed = calculate_fuel_needed(module)
+    while fuel_needed > 0:
+        internal_sum += fuel_needed
+        fuel_needed = calculate_fuel_needed(fuel_needed)
+    return internal_sum
 
 
 def get_input_from_file():
