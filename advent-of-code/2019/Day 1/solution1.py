@@ -2,6 +2,15 @@ def calculate_fuel_needed(total_module_fuel):
     return total_module_fuel // 3 - 2
 
 
+def compute(modules):
+    first = 0
+    second = 0
+    for i in range(0, len(modules)):
+        first += calculate_fuel_needed(modules[i])
+        second += total(modules[i])
+    return first, second
+
+
 
 
 
