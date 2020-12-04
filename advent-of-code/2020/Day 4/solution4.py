@@ -5,8 +5,7 @@ def get_input_from_file():
     lines = []
     with open('input.txt') as f:
         for line in f.readlines():
-            if line != '/n':
-                lines.append(line)
+            lines.append(line)
     return lines
 
 
@@ -57,6 +56,7 @@ def compute_first(passports):
 
 if __name__ == "__main__":
     unordered_list = get_input_from_file()
+    print(unordered_list)
     list_of_passports = format_array(unordered_list)
     print(list_of_passports)
     print('solution 1: ', compute_first(list_of_passports)[0])
