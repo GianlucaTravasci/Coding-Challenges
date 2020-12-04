@@ -25,7 +25,7 @@ def format_array(lines):
     return passports
 
 
-def compute_first(passports):
+def compute(passports):
     valid_counter_first = 0
     valid_counter_second = 0
     for i in range(len(passports)):
@@ -59,5 +59,5 @@ if __name__ == "__main__":
     print(unordered_list)
     list_of_passports = format_array(unordered_list)
     print(list_of_passports)
-    print('solution 1: ', compute_first(list_of_passports)[0])
-    print('solution 2: ', compute_first(list_of_passports)[1])
+    print('solution 1: ', compute(list_of_passports)[0])
+    print('solution 2: ', compute(list_of_passports)[1])
