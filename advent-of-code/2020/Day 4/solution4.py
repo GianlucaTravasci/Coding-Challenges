@@ -26,6 +26,15 @@ def format_array(lines):
     return passports
 
 
+def compute_first(passports):
+    valid_counter_first = 0
+    valid_counter_second = 0
+    for i in range(len(passports)):
+        p = passports[i]
+        if 'byr' in p and 'iyr' in p and 'eyr' in p and 'hgt' in p and 'hcl' in p and 'ecl' in p and 'pid' in p:
+            valid_counter_first += 1
+            
+    return valid_counter_first, valid_counter_second
 
 
 if __name__ == "__main__":
