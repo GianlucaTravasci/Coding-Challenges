@@ -10,6 +10,22 @@ def get_input_from_file():
     return lines
 
 
+def format_array(lines):
+    passports = []
+    passport = {}
+    for i in range(len(lines)):
+        if ord(lines[i][0]) == 10:
+            passports.append(passport)
+            passport = {}
+        else:
+            fields = lines[i].split()
+            for f in range(len(fields)):
+                (k, v) = fields[f].split(':')
+                passport[k] = v
+    passports.append(passport)
+    return passports
+
+
 
 
 if __name__ == "__main__":
