@@ -37,4 +37,8 @@ def find_max_ID(list_of_IDs):
     return max(list_of_IDs)
 
 
-
+if __name__ == "__main__":
+    values = get_input_from_file()
+    list_of_IDs = seat_ID_finder(values)
+    print('solution 1: ', find_max_ID(list_of_IDs[0]))
+    print('solution 2: ', list_of_IDs[1])
