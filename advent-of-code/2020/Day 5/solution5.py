@@ -18,3 +18,18 @@ def decode_place(code, row_col):
         return row_col[1]
 
 
+def seat_ID_finder(seats_undecoded):
+    list_seat = []
+    for seat in seats_undecoded:
+        rows = decode_place(seat[:7], [0, 127])
+        columns = decode_place(seat[7:], [0, 7])
+        seat = rows * 8 + columns
+        list_seat.append(seat)
+    list_seat.sort()
+    seat_no = 1
+    while seat_no < len(list_seat):
+        if list_seat[seat_no] != list_seat[seat_no - 1] + 1:
+            return list_seat, list_seat[seat_no] - 1
+        seat_no += 1
+
+
