@@ -33,3 +33,8 @@ def seat_ID_finder(seats_undecoded):
         seat_no += 1
 
 
+def find_max_ID(list_of_IDs):
+    return max(list_of_IDs)
+
+
+
