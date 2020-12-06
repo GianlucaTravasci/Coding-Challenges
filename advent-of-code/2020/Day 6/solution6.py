@@ -59,8 +59,6 @@ def count_group_answers(groups: list) -> int:
                 if item[1] == len(group):
                     counter += 1
 
-            # pprint(answers_in_group)
-
     return counter
 
 
