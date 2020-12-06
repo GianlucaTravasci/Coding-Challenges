@@ -1,68 +1,39 @@
-from pathlib import Path
+from functools import reduce
 
 
-def read_input(path: str) -> list:
+def get_input_from_file():
+    with open('input.txt', 'r') as file:
+        record = file.read().split('\n\n')
+    return record
+
+
+def count_total_yes(record):
+    clear_newline = lambda entry: entry.replace('\n', '')
+    batch = list(map(clear_newline, record))
     groups = []
-    group = []
-
-    txt_file = Path(path)
-
-    with txt_file.open('r') as f:
-        for line in f.readlines():
-
-            raw_line = line.replace('\n', '')
-
-            if len(raw_line) == 0:
-                groups.append(group)
-                group = []
-                continue
-
-            group.append(raw_line)
-
-        groups.append(group)
-    return groups
-
-
-def count_answers(groups: list) -> int:
+    for answares in batch:
+        cache = {}
+        for answare in answares:
+            if answare not in cache:
+                cache[answare] = answare
+        groups.append(len(cache))
     counter = 0
-
     for group in groups:
-        answers = []
-        for person in group:
-            for answr in person:
-                if answr not in answers:
-                    answers.append(answr)
-        counter += len(answers)
-
+        counter += group
     return counter
 
 
-def count_group_answers(groups: list) -> int:
-    counter = 0
-
-    for group in groups:
-
-        if len(group) == 1:
-            counter += len(group[0])
-        else:
-
-            answers_in_group = {}
-
-            for person in group:
-                for answr in person:
-                    if answers_in_group.get(answr) != None:
-                        answers_in_group[answr] += 1
-                    else:
-                        answers_in_group[answr] = 1
-
-            for item in answers_in_group.items():
-                if item[1] == len(group):
-                    counter += 1
-
-    return counter
+def count_all_yes(record):
+    batch = map(str.split, record)
+    groups = []
+    for group_answers in batch:
+        group_answers = list(map(set, group_answers))
+        all_yes = reduce(set.intersection, group_answers)
+        groups.append(all_yes)
+    return sum([len(group) for group in groups])
 
 
-groups = read_input("./input.txt")
-
-print('solution 1:', count_answers(groups))
-print('solution 2:', count_group_answers(groups))
+if __name__ == "__main__":
+    a = get_input_from_file()
+    print('solution 1:', count_total_yes(a))
+    print('solution 2:', count_all_yes(a))
