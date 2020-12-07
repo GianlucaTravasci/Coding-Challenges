@@ -4,6 +4,18 @@ def get_input_from_file():
     return record
 
 
+def count_bags(bag, rules, cache):
+    for rule in rules:
+        x = rule.split(" contain ")
+        x[0] = x[0].replace("bags", "bag")
+        y = x[1].split(", ")
+        if bag in x[1] and x[0] not in cache:
+            cache.append(x[0])
+            bn = ["".join(y for y in k if y.isalpha() or y == ' ').replace("bags", "bag") for k in y]
+            count_bags(x[0], rules, cache)
+    return len(cache)
+
+
 
 
 
