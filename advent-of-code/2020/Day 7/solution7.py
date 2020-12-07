@@ -16,7 +16,23 @@ def count_bags(bag, rules, cache):
     return len(cache)
 
 
-
+def count_individual(bag, rules):
+    for rule in rules:
+        x = rule.split(" contain ")
+        x[0] = x[0].replace("bags", "bag")
+        y = x[1].split(", ")
+        if bag in x[0]:
+            if "no other bag" in rule:
+                return 0
+            bn = ["".join(y for y in k if y.isalpha() or y == ' ').replace("bags", "bag") for k in y]
+            counts = ["".join(y for y in k if y.isdigit() or y == ' ').replace("bags", "bag") for k in y]
+            counts_stripped_converted = []
+            for count in counts:
+                counts_stripped_converted.append(int(count.strip()))
+            total = 0
+            for bagname, count in zip(bn, counts_stripped_converted):
+                total += count + count_individual(bagname.strip(), rules) * count
+            return total
 
 
 if __name__ == "__main__":
