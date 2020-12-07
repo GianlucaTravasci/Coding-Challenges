@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10116301-c95e-4536-ae2d-b36b2ff910c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/advent-of-code/2020/Day 6/solution6.py" beforeDir="false" afterPath="$PROJECT_DIR$/advent-of-code/2020/Day 6/solution6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/advent-of-code/2020/Day 7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advent-of-code/2020/Day 7/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advent-of-code/2020/Day 7/solution7.py" beforeDir="false" afterPath="$PROJECT_DIR$/advent-of-code/2020/Day 7/solution7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Python.solution6">
+  <component name="RunManager" selected="Python.solution7">
     <configuration name="solution3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="codingchallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,8 +118,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="solution7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\gianl\miniconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advent-of-code/2020/Day 7" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advent-of-code/2020/Day 7/solution7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.solution7" />
         <item itemvalue="Python.solution6" />
         <item itemvalue="Python.solution4" />
         <item itemvalue="Python.solution3" />
@@ -132,12 +159,16 @@
       <updated>1607197097907</updated>
       <workItem from="1607197099536" duration="3842000" />
       <workItem from="1607245242666" duration="3006000" />
-      <workItem from="1607290383207" duration="1862000" />
+      <workItem from="1607290383207" duration="2121000" />
+      <workItem from="1607328961254" duration="3675000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -152,22 +183,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607292186199">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607332639705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607292186199" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607292186198">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607332639705" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607332639705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607292186198" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607292186198">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607332639705" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607332639704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607292186198" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607292186199">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607332639704" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607332639705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607292186199" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607332639705" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1607248272901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -187,7 +218,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/codingchallenge$solution4.coverage" NAME="solution4 Coverage Results" MODIFIED="1607201533831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advent-of-code/2019/Day 4" />
+    <SUITE FILE_PATH="coverage/codingchallenge$solution7.coverage" NAME="solution7 Coverage Results" MODIFIED="1607332639686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advent-of-code/2020/Day 7" />
     <SUITE FILE_PATH="coverage/codingchallenge$solution3.coverage" NAME="solution3 Coverage Results" MODIFIED="1607197775444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advent-of-code/2019/Day 3" />
-    <SUITE FILE_PATH="coverage/codingchallenge$solution6.coverage" NAME="solution6 Coverage Results" MODIFIED="1607292186178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advent-of-code/2020/Day 6" />
+    <SUITE FILE_PATH="coverage/codingchallenge$solution6.coverage" NAME="solution6 Coverage Results" MODIFIED="1607329478735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/advent-of-code/2020/Day 6" />
   </component>
 </project>
