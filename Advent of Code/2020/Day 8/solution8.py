@@ -28,7 +28,22 @@ def part1(rules):
     return (i < len(rules)), acc
 
 
+def part2(rules):
+    for i, current in enumerate(rules):
+        if current[0] == "acc":
+            continue
 
+        if current[0] == "nop":
+            adjusted_operation = "jmp"
+        else:
+            adjusted_operation = "nop"
+
+        test_rules = copy.deepcopy(rules)
+        test_rules[i][0] = adjusted_operation
+        has_inf_loop, acc = part1(test_rules)
+
+        if not has_inf_loop:
+            return acc
 
 
 if __name__ == "__main__":
