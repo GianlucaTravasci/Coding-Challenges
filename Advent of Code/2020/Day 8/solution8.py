@@ -9,6 +9,26 @@ def parse_to_list(input_file):
     return rules
 
 
+def part1(rules):
+    i = 0
+    acc = 0
+    completed_idx = set()
+
+    while i not in completed_idx and i < len(rules):
+        completed_idx.add(i)
+        current = rules[i]
+        if current[0] == "jmp":
+            i += current[1]
+            continue
+        if current[0] == "acc":
+            acc += current[1]
+
+        i += 1
+
+    return (i < len(rules)), acc
+
+
+
 
 
 if __name__ == "__main__":
