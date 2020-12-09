@@ -10,6 +10,11 @@ def get_input_from_file():
     return input
 
 
+def check_sum(target_value, list_of_values):
+    for a, b in combinations(list_of_values, 2):
+        if a + b == target_value:
+            return True
+
 
 
 
