@@ -3,11 +3,8 @@ from itertools import combinations
 
 def get_input_from_file():
     with open('input.txt', 'r') as file:
-        record = file.read().split('\n')
-        input = []
-        for i in record:
-            input.append(int(i))
-    return input
+        record = list(map(lambda x: int(x), file.read().split('\n')))
+    return record
 
 
 def check_sum(target_value, list_of_values):
