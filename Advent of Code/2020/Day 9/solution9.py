@@ -22,6 +22,16 @@ def find_first_invalid(xmas):
             return xmas[i]
 
 
+def find_encryption_weaknes(xmas, target):
+    for i in range(len(xmas)):
+        current_index = i
+        batch = []
+        while sum(batch) < target:
+            batch.append(xmas[current_index])
+            current_index += 1
+
+        if sum(batch) == target:
+            return min(batch) + max(batch)
 
 
 if __name__ == "__main__":
