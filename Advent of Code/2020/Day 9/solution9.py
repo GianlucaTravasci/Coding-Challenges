@@ -16,6 +16,12 @@ def check_sum(target_value, list_of_values):
             return True
 
 
+def find_first_invalid(xmas):
+    for i in range(25, len(xmas)):
+        if not check_sum(xmas[i], xmas[i - 25:i]):
+            return xmas[i]
+
+
 
 
 if __name__ == "__main__":
