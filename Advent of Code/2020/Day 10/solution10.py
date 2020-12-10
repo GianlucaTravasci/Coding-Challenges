@@ -9,6 +9,18 @@ def get_input_from_file():
     return record
 
 
+def part1(adapters):
+    init = one = three = 0
+    for adapter in adapters:
+        diff = adapter - init
+        if diff == 1:
+            one += 1
+        if diff == 3:
+            three += 1
+        init = adapter
+    return one * three
+
+
 
 
 
