@@ -21,7 +21,12 @@ def part1(adapters):
     return one * three
 
 
-
+def part2(adapters):
+    options = defaultdict(int)
+    options[0] = 1
+    for i in adapters:
+        options[i] = sum([options[i - d] for d in [1, 2, 3]])
+    return options[adapters[-1]]
 
 
 if __name__ == "__main__":
