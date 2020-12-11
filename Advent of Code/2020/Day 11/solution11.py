@@ -37,6 +37,24 @@ def check_adjacent_seats(i, j, grid, part):
     return occupied
 
 
+def solve(grid, part):
+    while True:
+        change = False
+        new_grid = deepcopy(grid)
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] == 'L' and check_adjacent_seats(i, j, grid, part) == 0:
+                    new_grid[i][j] = '#'
+                    change = True
+                elif grid[i][j] == '#' and check_adjacent_seats(i, j, grid, part) >= (4 if part == 1 else 5):
+                    new_grid[i][j] = 'L'
+                    change = True
+                else:
+                    new_grid[i][j] = grid[i][j]
+        grid = deepcopy(new_grid)
+        if not change:
+            print(sum(rows.count('#') for rows in grid))
+            return
 
 
 solve(seats, 1) # Part 1
