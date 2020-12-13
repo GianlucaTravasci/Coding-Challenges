@@ -7,6 +7,14 @@ with open("input.txt") as file:
     ids = [int(bus) for bus in buses if bus != 'x']
 
 
+def earliest_to_wait():
+    timestamp = earliest
+    while True:
+        departs = list(filter(lambda bus: timestamp % bus == 0, ids))
+        if departs:
+            return departs[0] * (timestamp - earliest)
+        timestamp += 1
+
 
 
 
