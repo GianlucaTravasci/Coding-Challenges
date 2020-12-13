@@ -1,0 +1,14 @@
+from functools import reduce
+from operator import mul
+
+with open("input.txt") as file:
+    earliest = int(file.readline())
+    buses = file.readline().strip().split(',')
+    ids = [int(bus) for bus in buses if bus != 'x']
+
+
+
+
+
+print("Earliest x wait:", earliest_to_wait())
+print("Offsets match:", offset_matches())
