@@ -16,6 +16,14 @@ def earliest_to_wait():
         timestamp += 1
 
 
+def offset_matches():
+    timestamp = 0
+    offset = list(map(lambda bus: buses.index(str(bus)), ids))
+    while True:
+        departs = list(filter(lambda bus: (timestamp + offset[ids.index(bus)]) % bus == 0, ids))
+        if departs == ids:
+            return timestamp + offset[0]
+        timestamp += reduce(mul, departs)
 
 
 print("Earliest x wait:", earliest_to_wait())
