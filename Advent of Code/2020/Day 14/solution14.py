@@ -15,7 +15,15 @@ def mask_value(mask, val):
         ''.join([digit if m == 'X' else m for m, digit in zip_longest(mask[::-1], val[::-1], fillvalue='0')][::-1]), 2)
 
 
-
+def part1(record):
+    mask = ''
+    memory = {}
+    for key, val in record:
+        if key == 'mask':
+            mask = val
+        else:
+            memory[key] = mask_value(mask, val)
+    return sum(memory.values())
 
 
 if __name__ == "__main__":
