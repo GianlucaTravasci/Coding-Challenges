@@ -23,3 +23,17 @@ def get_operator(expression, advanced):
     return candidate
 
 
+def evaluate(expression, advanced=False):
+    if expression.isdigit():
+        return int(expression)
+
+    operator = get_operator(expression, advanced)
+
+    if operator is None:
+        return evaluate(expression[1:-1], advanced)
+
+    return operator[0](
+        evaluate(expression[:operator[1]], advanced),
+        evaluate(expression[operator[1]+1:], advanced))
+
+
