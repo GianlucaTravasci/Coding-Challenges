@@ -37,3 +37,5 @@ def evaluate(expression, advanced=False):
         evaluate(expression[operator[1]+1:], advanced))
 
 
+print('part 1:', sum(evaluate(expression) for expression in expressions))
+print('part 2:', sum(evaluate(expression, True) for expression in expressions))
