@@ -67,6 +67,19 @@ def recursive_combat(deck1, deck2):
     return winner, player1, player2
 
 
+def part_two(player1, player2):
+    result = recursive_combat(player1, player2)
+    if result[0] == "p1":
+        winner = result[1]
+    else:
+        winner = result[2]
+
+    score = 0
+
+    for i, j in enumerate(winner):
+        score += (50 - i) * int(j)
+
+    return score
 
 
 if __name__ == "__main__":
