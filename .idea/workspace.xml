@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a66338d4-17b9-4d5f-b538-c1b4b37b3a68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advent of Code/2020/Day 21/Solution21.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2020/Day 21/Solution21.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/2020/Day 22/solution22.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2020/Day 22/solution22.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="C:\Users\gianl\Desktop\Coding-Challenges\Advent of Code\2020\Day 18" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Solution21">
+  <component name="RunManager" selected="Python.solution22">
     <configuration name="Solution21" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Coding-Challenges" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,8 +164,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="solution22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Coding-Challenges" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Advent of Code/2020/Day 22" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Advent of Code/2020/Day 22/solution22.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.solution22" />
         <item itemvalue="Python.Solution21" />
         <item itemvalue="Python.solution20" />
         <item itemvalue="Python.solution19" />
@@ -184,6 +204,7 @@
       <workItem from="1608543476756" duration="2237000" />
       <workItem from="1608562967896" duration="546000" />
       <workItem from="1608563588220" duration="125000" />
+      <workItem from="1608730292303" duration="2010000" />
     </task>
     <servers />
   </component>
